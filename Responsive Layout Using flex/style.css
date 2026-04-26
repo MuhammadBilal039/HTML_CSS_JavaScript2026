@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-grow: 1;
+  width: 250px;
+  height: 150px;
+  background-color: black;
+  border-radius: 10px;
+  flex-basis: 200;
+}
