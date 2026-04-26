@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #e8e8e8;
+}
+
+.split-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  gap: 0;
+}
+
+.quadrant {
+  background-image: url("https://img.freepik.com/free-photo/animal-eye-staring-close-up-watch-nature-generative-ai_188544-15471.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: 300px 300px;
+  transition: transform 0.3s ease;
+}
+
+.q1 {
+  background-position: top left;
+}
+
+.q2 {
+  background-position: top right;
+}
+
+.q3 {
+  background-position: bottom left;
+}
+
+.q4 {
+  background-position: bottom right;
+}
+
+.split-image-container:hover .q1 {
+  transform: translate(-10px, -10px);
+}
+
+.split-image-container:hover .q2 {
+  transform: translate(10px, -10px);
+}
+
+.split-image-container:hover .q3 {
+  transform: translate(-10px, 10px);
+}
+
+.split-image-container:hover .q4 {
+  transform: translate(10px, 10px);
+}
