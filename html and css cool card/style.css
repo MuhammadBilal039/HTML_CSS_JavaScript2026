@@ -1,0 +1,53 @@
+body {
+  height: 100vh;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 40px;
+  background: black;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card ::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: conic-gradient(#00f7ff, #ff00f7, #00f7ff);
+  top: -100%;
+  left: -100%;
+  animation: spin 4s linear infinite;
+}
+
+.card ::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  /* background: #111; */
+  border-radius: 12px;
+}
+
+.card h2,
+.card p {
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
