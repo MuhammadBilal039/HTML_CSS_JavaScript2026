@@ -1,0 +1,24 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #00f5a0, #005dd6);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 20px rgba(0, 255, 200, 0.5);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 40px rgba(0, 255, 200, 1);
+  }
+}
