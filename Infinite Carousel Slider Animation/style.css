@@ -1,0 +1,45 @@
+.viewport {
+  width: 220px;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.ribbon {
+  display: flex;
+  width: calc(220px * 6);
+  animation: slideShow 10s infinite;
+}
+
+.card {
+  width: 220px;
+  height: 330px;
+  background-position: center center;
+  background-size: cover;
+}
+
+@keyframes slideShow {
+  0%,
+  15% {
+    transform: translateX(0);
+  }
+  20%,
+  35% {
+    transform: translateX(-220px);
+  }
+  40%,
+  55% {
+    transform: translateX(-440px);
+  }
+  60%,
+  75% {
+    transform: translateX(-660px);
+  }
+  80%,
+  95% {
+    transform: translateX(-880px);
+  }
+  100% {
+    transform: translateX(-1100px);
+  }
+}
