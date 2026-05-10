@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="book1">
+          <label for="">Computer</label>
+          <input type="number" id="subOne" placeholder="Enter Marks..." />
+        </div>
+        <div class="book2">
+          <label for="">English</label>
+          <input type="number" id="subTwo" placeholder="Enter Marks..." />
+        </div>
+        <div class="book3">
+          <label for="">Maths</label>
+          <input type="number" id="subThree" placeholder="Enter Marks..." />
+        </div>
+        <div class="book4">
+          <label for="">Urdu</label>
+          <input type="number" id="subFour" placeholder="Enter Marks..." />
+        </div>
+        <div class="book5">
+          <label for="">Islamiyat</label>
+          <input type="number" id="subFive" placeholder="Enter Marks..." />
+        </div>
+        <div>
+          <button onclick="calculatingSubjectsMarks()">Calculate</button>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <th>Total Marks:</th>
+          <td>500</td>
+        </tr>
+        <tr>
+          <th>Obtained Marks:</th>
+          <td id="obtainedMarks"></td>
+        </tr>
+        <tr>
+          <th>Percentage:</th>
+          <td id="percentage"></td>
+        </tr>
+        <tr>
+          <th>Grade:</th>
+          <td  id="grade"></td>
+        </tr>
+        <tr>
+          <th>Remarks:</th>
+          <td id="remarks"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
